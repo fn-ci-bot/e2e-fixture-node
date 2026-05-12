@@ -1,0 +1,14 @@
+version: v1
+kind: Service
+metadata:
+  name: e2e-fixture-node
+spec:
+  runtime: node
+  port: 3000
+  env: []
+  secrets: []
+db:
+  enabled: true
+preview:
+  db:
+    enabled: true

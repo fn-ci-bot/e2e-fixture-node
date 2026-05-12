@@ -1,0 +1,18 @@
+# FluxNow PRODUCTION deploy configuration
+#
+# This file is pre-scaffolded but dormant until production is activated.
+# To activate production:
+#   1. Use the FluxNow dashboard or CLI to provision the prod environment
+#   2. Set up DNS (A record → cluster IP shown in dashboard)
+#   3. Trigger the deploy-prod workflow in GitHub Actions
+#
+# image.tag is updated by the deploy-prod workflow (manual trigger).
+# Never auto-deployed — staging gates all changes first.
+
+appName: e2e-fixture-node
+customer: fn-ci-bot
+port: 3000
+image:
+  tag: latest
+db:
+  enabled: true

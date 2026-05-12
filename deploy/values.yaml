@@ -1,0 +1,17 @@
+# FluxNow deploy configuration
+#
+# image.tag is updated automatically on push to main.
+# Database secrets are auto-provisioned from OpenBao.
+#
+# To add custom secrets:
+#   1. bao kv put secret/customers/fn-ci-bot/e2e-fixture-node/myservice api-key=sk-...
+#   2. Add to secrets[] and push.
+#   Will be managed via FluxNow dashboard in the future.
+
+appName: e2e-fixture-node
+customer: fn-ci-bot
+port: 3000
+image:
+  tag: latest
+db:
+  enabled: true
