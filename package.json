@@ -1,0 +1,8 @@
+{
+  "name": "e2e-fixture-node",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.ts"
+  }
+}
